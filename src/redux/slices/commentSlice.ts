@@ -20,7 +20,7 @@ export const commentSlice = createSlice({
     addComment: (state, action: PayloadAction<ProductComment>) => {
       state.comments.push(action.payload);
     },
-    deleteComment: (state, action: PayloadAction<number>) => {
+    deleteComment: (state, action: PayloadAction<string>) => {
       state.comments = state.comments.filter(c => c.id !== action.payload);
     },
   },

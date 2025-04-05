@@ -5,7 +5,7 @@ import ConfirmationModal from '../common/ConfirmationModal';
 
 interface CommentItemProps {
   comment: ProductComment;
-  onDelete: (id: number) => void;
+  onDelete: (id: string) => void;
 }
 
 const CommentItem: React.FC<CommentItemProps> = ({ comment, onDelete }) => {

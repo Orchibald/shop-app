@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Button from '../common/Button';
 
 interface CommentFormProps {
-  productId: number;
+  productId: string;
   onSubmit: (description: string) => void;
 }
 

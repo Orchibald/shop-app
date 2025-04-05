@@ -10,7 +10,7 @@ export const api = {
     return response.json();
   },
 
-  async fetchProductById(id: number): Promise<Product> {
+  async fetchProductById(id: string): Promise<Product> {
     const response = await fetch(`${API_URL}/products/${id}`);
     return response.json();
   },
@@ -37,7 +37,7 @@ export const api = {
     return response.json();
   },
 
-  async deleteProduct(id: number): Promise<void> {
+  async deleteProduct(id: string): Promise<void> {
     await fetch(`${API_URL}/products/${id}`, {
       method: 'DELETE',
     });
@@ -54,7 +54,7 @@ export const api = {
     return response.json();
   },
 
-  async deleteComment(id: number): Promise<void> {
+  async deleteComment(id: string): Promise<void> {
     await fetch(`${API_URL}/comments/${id}`, {
       method: 'DELETE',
     });

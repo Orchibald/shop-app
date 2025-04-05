@@ -26,7 +26,7 @@ const ProductDetailsPage: React.FC = () => {
 
       try {
         setLoading(true);
-        const data = await api.fetchProductById(parseInt(id));
+        const data = await api.fetchProductById(id);
         setProduct(data);
       } catch (error) {
         console.error('Error fetching product:', error);
@@ -79,7 +79,7 @@ const ProductDetailsPage: React.FC = () => {
     }
   };
 
-  const handleDeleteComment = async (commentId: number) => {
+  const handleDeleteComment = async (commentId: string) => {
     if (!product) return;
 
     try {

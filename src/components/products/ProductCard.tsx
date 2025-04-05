@@ -6,7 +6,7 @@ import ConfirmationModal from '../common/ConfirmationModal';
 
 interface ProductCardProps {
   product: Product;
-  onDelete: (id: number) => void;
+  onDelete: (id: string) => void;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product, onDelete }) => {

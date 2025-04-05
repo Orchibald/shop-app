@@ -1,6 +1,6 @@
 export interface ProductComment  {
-  id: number;
-  productId: number;
+  id: string;
+  productId: string;
   description: string;
   date: string;
 }

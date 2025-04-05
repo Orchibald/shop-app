@@ -4,7 +4,7 @@ import CommentItem from './CommentItem';
 
 interface CommentListProps {
   comments: ProductComment[];
-  onDelete: (id: number) => void;
+  onDelete: (id: string) => void;
 }
 
 const CommentList: React.FC<CommentListProps> = ({ comments, onDelete }) => {

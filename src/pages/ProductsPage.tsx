@@ -43,7 +43,7 @@ const ProductsPage: React.FC = () => {
     }
   };
 
-  const handleDeleteProduct = async (id: number) => {
+  const handleDeleteProduct = async (id: string) => {
     try {
       await api.deleteProduct(id);
       dispatch(deleteProduct(id));
