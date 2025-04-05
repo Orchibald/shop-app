@@ -1,54 +1,57 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Shop App
 
-Currently, two official plugins are available:
+**Shop App** is an e-commerce web application that allows users to browse, add, edit, and delete products. Built with **React** and **TypeScript**, this app offers a seamless shopping experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features  
+✔️ Browse and filter products  
+✔️ Add, edit, and delete products  
+✔️ Sort products by name and count  
+✔️ Smooth UI and responsive design  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Technologies Used  
+- ⚛️ **React.js** – Frontend library  
+- 🟦 **TypeScript** – Strongly typed JavaScript  
+- 📦 **Redux Toolkit** – State management   
+- 🎨 **CSS** – Styling  
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🚀 How to Run  
+
+### Run Locally  
+
+1️⃣ **Clone the repository:**  
+```sh
+git clone https://github.com/Orchibald/shop-app.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2️⃣ **Navigate to the project directory:**  
+```sh
+cd shop-app
 ```
+
+3️⃣ **Install dependencies:**  
+```sh
+npm install
+```
+
+4️⃣ **Start the development server:**  
+```sh
+npm run dev
+```
+
+**Start JSON-server:** 
+```sh
+json-server --watch db.json --port 3001
+```
+
+📌 The app will be available at `http://localhost:5173/`.  
+
+---
+
+## 📩 Contact  
+🔹 Author: [Orchibald](https://github.com/Orchibald)  
+🔹 Repository: [GitHub](https://github.com/Orchibald/shop-app)
